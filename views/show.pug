@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+     link(rel='stylesheet',href='/stylesheets/index.css')
+    body
+      div.whole
+        table(id="table")
+            thead
+                tr
+                    th Item ID
+                    th Name
+                    th Quantity
+                    th Price
+            tbody
+                each emp in itemlis
+                    tr
+                       td= emp._id
+                       td= emp.name
+                       td= emp.quantity
+                       td= emp.price
+

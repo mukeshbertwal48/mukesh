@@ -1,0 +1,11 @@
+doctype html
+html
+ head
+  link(rel='stylesheet',href='/stylesheets/index.css')
+ body
+  div.whole
+   form
+    input.b(type="button",value="Add Customer",onclick="window.location.pathname='/account/admin/customeradd'")
+    br
+    br
+    input.b(type="button",value="Add Item",onclick="window.location.pathname='/account/admin/'")

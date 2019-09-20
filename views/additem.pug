@@ -1,0 +1,24 @@
+doctype html
+html
+ head
+  link(rel='stylesheet',href='/stylesheets/index.css')
+ body
+  div.whole
+   h1 Add Item
+   br
+   form(action="/account/admin/additem",method="post")
+    p #{name}
+    input(type="text",name="uname")
+    br
+    br
+    p #{quan}
+    input(type="number",name="quantity")
+    br
+    br
+    p #{price}
+    input(type="number",name="price")
+    br
+    br
+    input.b(type="submit",value="Add Item")
+    br
+

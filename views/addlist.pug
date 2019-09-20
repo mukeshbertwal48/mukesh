@@ -1,0 +1,20 @@
+doctype html
+html
+ head
+  link(rel='stylesheet',href='/stylesheets/index.css')
+ body
+  div.whole
+   h1 Add Item
+   br
+   form(action="/account/ussignin/order",method="post")
+    p #{name}
+    input(type="text",name="id")
+    br
+    br
+    p #{quan}
+    input(type="text",name="quan")
+    br
+    br
+    input.b(type="submit",value="Add Item")
+    br
+

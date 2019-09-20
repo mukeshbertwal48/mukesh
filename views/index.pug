@@ -1,0 +1,24 @@
+doctype html
+html
+ head
+  link(rel='stylesheet',href='/stylesheets/index.css')
+ body
+  div.whole
+   h1 Admin Login
+   br
+   form(action="/account/admin",method="post")
+    p #{name}
+    input(type="text",name="uname")
+    br
+    br
+    p #{pass}
+    input(type="password",name="pass")
+    br
+    br
+    input.b(type="submit",value="Sign In")
+    br
+    br
+    input.b(type="button",value="Admin Sign Up",onclick="window.location.pathname='/account/adsignup'")
+    br
+    br
+    input.b(type="button",value="User Sign In",onclick="window.location.pathname='/account/ussignin'")

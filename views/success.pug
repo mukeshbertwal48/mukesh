@@ -1,0 +1,28 @@
+doctype html
+
+html
+ head
+  if(t == 1)
+   script.
+    alert("Item Added");
+    window.location.pathname='/account/ussignin/order';
+  else if(t==2)
+   script.
+    alert("Customer Registered");
+    window.location.pathname='/account/admin/addcust';
+  else if(t==3)
+   script.
+    alert("Item Added");
+    window.location.pathname='/account/admin/additem';
+  else if(t==4)
+   script.
+    alert("Admin Registered");
+    window.location.pathname='/account/adsignup';
+  else if(t==5)
+   script.
+    alert("Status Changed");
+    window.location.pathname='/account/admin/statuschange';
+
+ body
+
+

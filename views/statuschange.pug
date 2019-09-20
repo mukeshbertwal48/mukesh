@@ -1,0 +1,23 @@
+doctype html
+html
+ head
+  link(rel='stylesheet',href='/stylesheets/index.css')
+ body
+  div.whole
+   h1 Customer Registration
+   br
+   form(action="/account/admin/statuschange",method="post")
+    p #{name}
+    input(type="text",name="uname")
+    br
+    br
+    p #{sta}
+    input(type="radio",name="status",value="active")
+    span Active
+    input(type="radio",name="status",value="disabled")
+    span Disabled
+    br
+    br
+    input.b(type="submit",value="Update")
+    br
+

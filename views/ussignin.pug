@@ -1,0 +1,20 @@
+doctype html
+html
+ head
+  link(rel='stylesheet',href='/stylesheets/index.css')
+ body
+  div.whole
+   h1 Customer Login
+   br
+   form(action="/account/ussignin",method="post")
+    p #{name}
+    input(type="text",name="uname")
+    br
+    br
+    p #{pass}
+    input(type="password",name="pass")
+    br
+    br
+    input.b(type="submit",value="Sign In")
+  
+
