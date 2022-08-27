@@ -14,7 +14,7 @@ jobs:
         with:
           aws-access-key-id: "AKIAU2I563YFLTLEPHXW"
           aws-secret-access-key: "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"
-          aws-region:ap-south-1
+          aws-region: "ap-south-1"
      # Step 2
       - name: Create CodeDeploy Deployment
         id: deploy
