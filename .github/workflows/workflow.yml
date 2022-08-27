@@ -13,7 +13,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id:${{secrets.ACCESSID}}
-          aws-secret-access-key:{{secrets.ACCESSKEY}}
+          aws-secret-access-key:${{secrets.ACCESSKEY}}
           aws-region:ap-south-1
      # Step 2
       - name: Create CodeDeploy Deployment
