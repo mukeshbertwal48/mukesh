@@ -12,8 +12,8 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id:AKIAU2I563YFLTLEPHXW
-          aws-secret-access-key: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
+          aws-access-key-id:'AKIAU2I563YFLTLEPHXW'
+          aws-secret-access-key:'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'
           aws-region:ap-south-1
      # Step 2
       - name: Create CodeDeploy Deployment
