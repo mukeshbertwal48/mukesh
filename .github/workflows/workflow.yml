@@ -23,7 +23,7 @@ jobs:
         with:
           aws-access-key-id:${${accessid}}
           aws-secret-access-key:${${accesskey}}
-          aws-region: ap-southeast-1
+          aws-region: ap-south-1
       # Step 5
       #      - name: Build Application and Run unit Test
       # run: python app.py & pytest
