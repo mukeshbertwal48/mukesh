@@ -3,6 +3,11 @@ os: linux
 files:
  - source: .
    destination: /home/ubuntu/node/mukesh
+permissions:
+ - object: /
+   pattern: "**"
+   owner: ubuntu
+   group: ubuntu
 hooks:
   AfterInstall:
    - location: scripts/install_app_dependencies
